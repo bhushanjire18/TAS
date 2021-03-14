@@ -1,0 +1,99 @@
+<div class="container pt-2 pb-2">
+    <div class="text-center">
+        <h3>Patient Info</h3>
+    </div>
+    <div class="card">
+        <div class="card-header">Personal Info</div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-2">Name</div>
+                <div class="col-md-2"> : </div>
+                <div class="col-md-8">{{patientInfo?.Personal_info?.Name}}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">Email</div>
+                <div class="col-md-2"> : </div>
+                <div class="col-md-8">{{patientInfo?.Personal_info?.Email}}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">Phone</div>
+                <div class="col-md-2"> : </div>
+                <div class="col-md-8">{{patientInfo?.Personal_info?.Phone}}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">Age</div>
+                <div class="col-md-2"> : </div>
+                <div class="col-md-8">{{patientInfo?.Personal_info?.Age}}</div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="card">
+        <div class="card-header">Medical Condition</div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-2">Heart Disease</div>
+                <div class="col-md-2"> : </div>
+                <div class="col-md-8">{{patientInfo?.Medical_Condition?.Heart_Disease ? 'Yes' : 'No'}}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">Diabetics</div>
+                <div class="col-md-2"> : </div>
+                <div class="col-md-8">{{patientInfo?.Medical_Condition?.Diabetics ? 'Yes'  : 'No'}}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">Blood Pressure</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-2">High BP</div>
+                                <div class="col-md-2"> : </div>
+                                <div class="col-md-8">{{patientInfo?.Medical_Condition?.Blood_Pressure?.High_BP ? 'Yes' : 'No'}}</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2">Low BP</div>
+                                <div class="col-md-2"> : </div>
+                                <div class="col-md-8">{{patientInfo?.Medical_Condition?.Blood_Pressure?.Low_BP ? 'Yes' : 'No'}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <hr />
+    <div class="card">
+        <div class="card-header">Health Status</div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-2">Height</div>
+                <div class="col-md-2"> : </div>
+                <div class="col-md-8">{{patientInfo?.Health_Status?.Height}}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">Weight</div>
+                <div class="col-md-2"> : </div>
+                <div class="col-md-8">{{patientInfo?.Health_Status?.Weight}}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">Pulse Rate</div>
+                <div class="col-md-2"> : </div>
+                <div class="col-md-8">{{patientInfo?.Health_Status?.Pulse_Rate}}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">BP</div>
+                <div class="col-md-2"> : </div>
+                <div class="col-md-8">{{patientInfo?.Health_Status?.BP}}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">BMI</div>
+                <div class="col-md-2"> : </div>
+                <div class="col-md-8">{{patientInfo?.Health_Status?.BMI}}</div>
+            </div>
+        </div>
+    </div>
+</div>

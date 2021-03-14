@@ -1,0 +1,24 @@
+<div class="container login-container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h3>Login</h3>
+    </div>
+  </div>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate>
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Email ID" class="form-control" formControlName="username">
+      <div *ngIf="f.username.touched || f.username.dirty" >
+        <div *ngIf="f.username.invalid" class="alert alert-danger">Please enter valid email address </div>
+      </div>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" class="form-control" formControlName="password">
+      <div *ngIf="f.password.touched || f.password.dirty" >
+        <div *ngIf="f.password.invalid" class="alert alert-danger">Password must contains minimum length 6 characters and should contain at least one capital
+          letter. </div>
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Login</button>
+    </div>
+  </form>
+</div>
